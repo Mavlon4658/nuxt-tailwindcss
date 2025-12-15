@@ -17,7 +17,7 @@ const props = withDefaults(defineProps<Props>(), {
 
 <template>
     <div class="flex items-center gap-6">
-        <nuxt-link to="#">
+        <nuxt-link to="/">
             <Button
                 variant="outlined"
                 class="shrink-0 bg-white border-[#e0e0eb] w-14 h-14 p-0"
