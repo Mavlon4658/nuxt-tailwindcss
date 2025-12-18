@@ -15,8 +15,8 @@ defineProps<Props>()
 </script>
 
 <template>
-    <div class="border border-[#e0e0eb] rounded-xl p-8">
-        <div class="flex items-center justify-between mb-8">
+    <div class="border border-[#e0e0eb] rounded-xl p-4 pt-6 md:p-8">
+        <div class="flex items-start md:items-center justify-between mb-8 gap-6">
             <div class="text-xl leading-[130%] text-black">{{ data.title }}</div>
             <div class="shrink-0 flex items-center gap-4">
                 <button class="flex items-center justify-center">
@@ -32,16 +32,16 @@ defineProps<Props>()
                 </svg>
             </div>
         </div>
-        <div class="flex flex-col items-start gap-6">
-            <ul class="flex items-stretch gap-2">
+        <div class="flex flex-col items-start gap-4 md:gap-6">
+            <ul class="flex flex-wrap items-stretch gap-2">
                 <li
                     v-for="(word, i) in data.words"
                     :key="i"
-                    class="py-3 px-4 cursor-pointer rounded-xl border border-[#e0e0eb] bg-[#f6f6f9] text-xl leading-[130%] text-[#1ab266]"
+                    class="py-[9.5px] md:py-3 px-4 cursor-pointer rounded-xl border border-[#e0e0eb] bg-[#f6f6f9] text-base md:text-xl leading-[130%] text-[#1ab266]"
                 >{{ word }}</li>
             </ul>
-            <div class="py-3 px-4 rounded-xl border border-[#e0e0eb] bg-[#f6f6f9] text-xl leading-[130%] text-[#8f8fa3]">Ivan love to play football</div>
-            <Button label="Проверить" class="h-10 px-[38px] bg-[#e8e8fc] border-transparent text-[#3333e8]" />
+            <div class="py-3 px-4 rounded-xl border border-[#e0e0eb] bg-[#f6f6f9] text-base md:text-xl leading-[130%] text-[#8f8fa3]">Ivan love to play football</div>
+            <Button label="Проверить" class="w-full md:w-auto h-10 px-[38px] bg-[#e8e8fc] border-transparent text-[#3333e8]" />
         </div>
     </div>
 </template>

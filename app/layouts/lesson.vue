@@ -11,7 +11,7 @@ const layoutCustomProps = useAttrs()
         <PHeader
             prevLink="#"
             :title="layoutCustomProps.title"
-            class="mb-12"
+            class="mb-6 md:mb-12"
         />
 
         <slot />

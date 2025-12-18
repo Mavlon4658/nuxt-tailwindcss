@@ -16,7 +16,7 @@ const layoutCustomProps = useAttrs()
                 subtitle="3"
             />
 
-            <NuxtLink to="#" class="text-lg font-medium text-[#3333e8] flex items-center gap-3">
+            <NuxtLink to="#" class="text-lg font-medium text-[#3333e8] hidden sm:flex items-center gap-3">
                 <span>Продолжить с последнего места</span>
                 <span class="flex items-center justify-center bg-[#3333e8]/10 w-9 h-9 rounded-[10px]">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">

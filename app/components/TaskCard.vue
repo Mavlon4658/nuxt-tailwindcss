@@ -27,8 +27,8 @@ const isPlay = ref<boolean>(false)
 
 <template>
     <div class="bg-white border border-[#e0e0eb] rounded-2xl">
-        <div class="flex flex-col gap-8 p-8 border-b border-[#e0e0eb]">
-            <h3 class="text-[28px] font-semibold leading-[120%]">
+        <div class="flex flex-col gap-6 md:gap-8 p-5 md:p-8 border-b border-[#e0e0eb]">
+            <h3 class="text-2xl md:text-[28px] font-semibold leading-[120%]">
                 {{ props.title }}
             </h3>
             <div class="text-base leading-[150%] font-normal">
@@ -56,7 +56,7 @@ const isPlay = ref<boolean>(false)
                 </div>
             </div>
         </div>
-        <div class="p-8">
+        <div class="p-5 md:p-8">
             <p-checkbox v-model:value="completed">Выполнено</p-checkbox>
         </div>
     </div>

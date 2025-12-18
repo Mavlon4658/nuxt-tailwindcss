@@ -36,9 +36,9 @@ const menuList = ref<MenuList[]>([
         name="lesson"
         title="Профиль"
     >
-        <div class="flex items-start gap-6">
+        <div class="flex flex-col lg:flex-row items-start gap-6">
             <!-- Left side -->
-            <div class="w-[302px] shrink-0 flex flex-col gap-4">
+            <div class="w-full lg:w-[302px] shrink-0 flex flex-col gap-4">
                 <menu-list :list="menuList" />
                 <nuxt-link to="#" class="group flex items-center gap-3 bg-white hover:bg-[#efeff5] border border-[#e0e0eb] rounded-2xl p-3 transition-[0.2s] duration-[ease-in-out] ease-[all]">
                     <span class="w-10 h-10 rounded-full group-hover:bg-white bg-[#efeff5] flex items-center justify-center transition-[0.2s] duration-[ease-in-out] ease-[all]">
@@ -50,8 +50,8 @@ const menuList = ref<MenuList[]>([
                 </nuxt-link>
             </div>
 
-            <div class="w-full border border-solid border-[rgba(24,24,27,0.1)] bg-white p-8 rounded-[20px] flex flex-col items-start gap-8">
-                <h2 class="text-[28px] font-semibold leading-[120%] text-black">Ваш профиль</h2>
+            <div class="w-full border border-solid border-[rgba(24,24,27,0.1)] bg-white px-4 py-8 md:p-8 rounded-[20px] flex flex-col items-start gap-8">
+                <h2 class="text-2xl md:text-[28px] font-semibold leading-[120%] text-black">Ваш профиль</h2>
                 <div>
                     <div class="text-xl font-semibold leading-[130%] text-black mb-3">Фото профиля</div>
                     <div class="flex items-center gap-3">
@@ -84,21 +84,21 @@ const menuList = ref<MenuList[]>([
                         <label for="username2" class="block !text-[#8f8fa3] text-xs leading-[130%] !font-medium">Форма для ввода</label>
                     </IftaLabel>
                 </div>
-                <div class="flex items-center justify-between w-full">
+                <div class="flex flex-col md:flex-row md:items-center justify-between w-full gap-3">
                     <div class="flex flex-col gap-2">
-                        <div class="text-xl font-semibold leading-[130%] text-black">Название параметра</div>
+                        <div class="text-lg md:text-xl font-semibold leading-[130%] text-black">Название параметра</div>
                         <p class="text-base font-normal leading-[130%] text-black">Значение параметра</p>
                     </div>
-                    <Button label="Кнопка обычная" severity="secondary" variant="outlined" class="h-14 rounded-2xl px-6 border-[#d1d1e0] !text-black"/>
+                    <Button label="Кнопка обычная" severity="secondary" variant="outlined" class="h-12 md:h-14 rounded-2xl px-6 border-[#d1d1e0] !text-black"/>
                 </div>
-                <div class="flex items-center justify-between w-full">
+                <div class="flex flex-col md:flex-row md:items-center justify-between w-full gap-3">
                     <div class="flex flex-col gap-2">
-                        <div class="text-xl font-semibold leading-[130%] text-black">Название параметра</div>
+                        <div class="text-lg md:text-xl font-semibold leading-[130%] text-black">Название параметра</div>
                         <p class="text-base font-normal leading-[130%] text-black">Значение параметра</p>
                     </div>
-                    <Button label="Кнопка красная" severity="danger" variant="outlined" class="h-14 rounded-2xl px-6 border-[#d1d1e0]"/>
+                    <Button label="Кнопка красная" severity="danger" variant="outlined" class="h-12 md:h-14 rounded-2xl px-6 border-[#d1d1e0]"/>
                 </div>
-                <Button label="Зеленая кнопка" class="h-14 rounded-2xl px-6 text-base text-white" />
+                <Button label="Зеленая кнопка" class="w-full md:w-auto h-12 md:h-14 rounded-2xl px-6 text-base text-white" />
             </div>
         </div>
     </NuxtLayout>

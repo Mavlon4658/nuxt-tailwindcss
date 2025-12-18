@@ -1,5 +1,5 @@
 <template>
-  <div class="py-[60px]">
+  <div class="py-8 md:py-[60px]">
     <NuxtLayout>
       <NuxtPage />
     </NuxtLayout>

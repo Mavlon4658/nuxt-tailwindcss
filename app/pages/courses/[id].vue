@@ -69,7 +69,7 @@ const lessonList = ref<LessonList []>([
         title="Курс для взрослых"
     >
 
-        <div class="grid grid-cols-3 gap-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 md:gap-4">
             <LessonCard
                 v-for="(data, i) in lessonList"
                 :key="i"

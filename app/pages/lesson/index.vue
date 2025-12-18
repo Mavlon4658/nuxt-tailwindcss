@@ -65,7 +65,7 @@ const exerciseList = ref<Exercise[]>([
     >
         <div class="flex items-start gap-6">
             <!-- Left side -->
-            <div class="w-[302px] shrink-0 flex flex-col gap-4">
+            <div class="w-[302px] shrink-0 hidden lg:flex flex-col gap-4">
                 <MenuList :list="menuList" />
                 <NuxtLink to="#" class="group flex items-center gap-3 bg-white hover:bg-[#efeff5] border border-[#e0e0eb] rounded-2xl p-3 transition-[0.2s] duration-[ease-in-out] ease-[all]">
                     <span class="w-10 h-10 rounded-full group-hover:bg-white bg-[#efeff5] flex items-center justify-center transition-[0.2s] duration-[ease-in-out] ease-[all]">
@@ -77,8 +77,8 @@ const exerciseList = ref<Exercise[]>([
                 </NuxtLink>
             </div>
 
-            <div class="w-full bg-white rounded-2xl border border-solid border-[rgba(24,24,27,0.1)] p-8">
-                <h2 class="font-semibold text-[28px] leading-[120%] text-black mb-8">2.1 Заголовок задания</h2>
+            <div class="w-full bg-white rounded-2xl border border-solid border-[rgba(24,24,27,0.1)] p-5 mt-6 md:p-8">
+                <h2 class="font-semibold text-2xl md:text-[28px] leading-[120%] text-black mb-6 md:mb-8">2.1 Заголовок задания</h2>
                 <div class="flex flex-col gap-6">
                     <div class="font-normal text-base leading-[150%] text-black">Тестовое поле для урока (вставляется произвольный HTML код</div>
                     <ExerciseCard

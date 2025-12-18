@@ -11,12 +11,12 @@ const completed = ref<boolean>(false);
 
 <template>
     <PContainer>
-        <div class="flex items-center justify-between mb-12">
+        <div class="flex flex-col md:flex-row flex-wrap md:items-center justify-between gap-4 mb-4 md:mb-12">
             <PHeader
                 prevLink="#"
                 :title="layoutCustomProps.title"
             />
-            <ToggleCompleted text="Скрывать выполненные" v-model:value="completed"/>
+            <ToggleCompleted text="Показывать только выполненные" v-model:value="completed"/>
         </div>
 
         <slot />
